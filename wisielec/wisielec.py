@@ -3,7 +3,6 @@ from time import sleep
 import sys
 import random
 from pathlib import Path
-import urllib.request
 def pobierz_slowo():
     filepath = Path("dane.txt")
     if filepath.is_file():
@@ -204,31 +203,31 @@ if __name__ == '__main__':
         print("========================================")
         if poziom == 1:
             if ile_prob_zostalo_int == 5:
-                wisielec_3()
+                wisielec_1()
             elif ile_prob_zostalo_int == 4:
-                wisielec_2_2()
+                wisielec_2_1()
             elif ile_prob_zostalo_int == 3:
                 wisielec_2()
             elif ile_prob_zostalo_int == 2:
-                wisielec_2_1()
+                wisielec_2_2()
             elif ile_prob_zostalo_int == 1:
-                wisielec_1()
+                wisielec_3()
         elif poziom == 2:
             if ile_prob_zostalo_int == 4:
-                wisielec_3()
-            elif ile_prob_zostalo_int == 3:
-                wisielec_2()
-            elif ile_prob_zostalo_int == 2:
-                wisielec_2_1()
-            elif ile_prob_zostalo_int == 1:
                 wisielec_1()
+            elif ile_prob_zostalo_int == 3:
+                wisielec_2_1()
+            elif ile_prob_zostalo_int == 2:
+                wisielec_2()
+            elif ile_prob_zostalo_int == 1:
+                wisielec_3()
         elif poziom == 3:
             if ile_prob_zostalo_int == 3:
-                wisielec_3()
+                wisielec_1()
             elif ile_prob_zostalo_int == 2:
                 wisielec_2()
             elif ile_prob_zostalo_int == 1:
-                wisielec_1()
+                wisielec_3()
         print("========================================")
 
         znak_uzytkownika_str = str(input("wpisz literkę: "))
